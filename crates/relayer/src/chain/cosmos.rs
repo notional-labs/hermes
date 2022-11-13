@@ -22,7 +22,8 @@ use tokio::runtime::Runtime as TokioRuntime;
 use tonic::{codegen::http::Uri, metadata::AsciiMetadataValue};
 use tracing::{error, instrument, trace, warn};
 
-use ibc_proto::cosmos::staking::v1beta1::Params as StakingParams;
+
+use ibc_proto::cosmos::liquidstaking::v1beta1::Params as StakingParams;
 use ibc_relayer_types::clients::ics07_tendermint::header::Header as TmHeader;
 use ibc_relayer_types::core::ics02_client::client_type::ClientType;
 use ibc_relayer_types::core::ics02_client::error::Error as ClientError;

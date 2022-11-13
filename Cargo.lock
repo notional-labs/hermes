@@ -1656,7 +1656,7 @@ dependencies = [
  "flex-error",
  "futures",
  "http",
- "ibc-proto",
+ "ibc-proto 0.22.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "ibc-relayer-types",
  "reqwest",
  "serde",
@@ -1700,6 +1700,21 @@ dependencies = [
 ]
 
 [[package]]
+name = "ibc-proto"
+version = "0.22.0"
+source = "git+https://github.com/eve-network/ibc-proto-rs?branch=eve#655e47418934e76c9a16b1306fcb17aedc0487ef"
+dependencies = [
+ "base64",
+ "bytes",
+ "flex-error",
+ "prost",
+ "serde",
+ "subtle-encoding",
+ "tendermint-proto",
+ "tonic",
+]
+
+[[package]]
 name = "ibc-relayer"
 version = "0.20.0"
 dependencies = [
@@ -1718,7 +1733,7 @@ dependencies = [
  "http",
  "humantime",
  "humantime-serde",
- "ibc-proto",
+ "ibc-proto 0.22.0 (git+https://github.com/eve-network/ibc-proto-rs?branch=eve)",
  "ibc-relayer-types",
  "ibc-telemetry",
  "itertools",
@@ -1819,7 +1834,7 @@ dependencies = [
  "env_logger",
  "erased-serde",
  "flex-error",
- "ibc-proto",
+ "ibc-proto 0.22.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "ics23",
  "itertools",
  "modelator",
@@ -1867,7 +1882,7 @@ dependencies = [
  "flex-error",
  "hex",
  "http",
- "ibc-proto",
+ "ibc-proto 0.22.0 (git+https://github.com/eve-network/ibc-proto-rs?branch=eve)",
  "ibc-relayer",
  "ibc-relayer-cli",
  "ibc-relayer-types",
